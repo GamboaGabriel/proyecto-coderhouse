@@ -28,6 +28,7 @@
     align-items: center;
     border-radius: 9px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: .5px .5px 20px #636363;
 }
 
 
@@ -368,6 +369,10 @@ li a:hover{
     flex-wrap: nowrap;
     justify-content:space-evenly;
     align-items:center;
+    background-color: #000000;
+    padding: 50px 30px;
+    box-shadow: 1px 1px 20px #616161;
+    border-radius: 3px;
 }
 
 .titulo-portada1{
@@ -394,6 +399,13 @@ li a:hover{
         max-width: 650px;
     }
 }
+
+@media (min-width:1000px){
+    .portada1{
+        justify-self: end;        
+    }
+}
+
 
 /* Formulario de la pagina principal de la web */
 
@@ -504,6 +516,7 @@ li a:hover{
     margin-top: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    box-shadow:1px 1px 20px#575757;
 
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
