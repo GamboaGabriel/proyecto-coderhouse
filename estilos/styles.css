@@ -1075,6 +1075,10 @@ article .label-radio:hover{
     
 }
 
+.mapa{
+        width: 300px;
+        height: 200px;
+    }
 @media (min-width:768px){
     .h2-contacto{
         font-size: 1.5rem;
@@ -1093,12 +1097,12 @@ article .label-radio:hover{
         grid-column: 2/3;
         grid-row: 2/3;
     }
-}
-
-.mapa{
+    .mapa{
     width: 600px;
     height: 260px;
 }
+}
+
 
 .gracias{
     font-size: 1.5rem;
