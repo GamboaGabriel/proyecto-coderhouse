@@ -1,17 +1,11 @@
-$color-de-fondo: rgba(0, 0, 0, 0.892);
-$fuente-de-la-web: 'Montserrat', sans-serif;
-$shadow-hover: 4px 4px rgb(0, 0, 0);
-$animacion-carga: all .4s ease-in-out 0s;
-$animaciion-carga2: all .4s ease-in-out 0s;
-$animaciion-transicion: all 0.4s ease-in-out 0s;
-$color-de-fuente: #fff;
+@import"./base";
 
+@import "./components/form";
+@import "./components/nav";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./pages/index";
+@import "./pages/academia";
+
 
 /* Fondo de la web */
 #portada-img {
