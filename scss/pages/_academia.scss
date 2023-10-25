@@ -1,0 +1,146 @@
+/*--------- Hoja de estilos seccion Academia --------*/
+
+.portada-container-academia {
+    display: flex;
+    /*-- Direccion de los elementos--*/
+    flex-direction: column;
+    /*---Multilinea---
+    flex-wrap: wrap;*/
+    /*-- Distribucion de los elementos--*/
+    justify-content: center;
+    align-items: center;
+}
+
+/* titulo de la primera foto primera seccion*/
+
+.titulo-clases {
+    margin: 35px 25px;
+    font-family: $fuente-de-la-web;
+    font-size: 2rem;
+    font-style: oblique;
+    color: $color-de-fuente;
+    text-shadow: 3px 5px rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+/* imagen y texto de la primera seccion */
+
+.foto-texto {
+    color: $color-de-fuente;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    text-shadow: 2px 3px rgb(0, 0, 0);
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.foto-baile {
+    width: 250px;
+    border-radius: 30px;
+
+    &:hover {
+        box-shadow: 10px 10px 30px black;
+        transition-duration: 1s;
+        width: 254px;
+        border-radius: 35px;
+    }
+}
+
+@media(min-width:768px) {
+    .foto-texto {
+        flex-direction: row;
+    }
+
+    .foto-baile {
+        width: 350px;
+    }
+
+    .foto-baile:hover,
+    .foto-baile2:hover {
+        box-shadow: 10px 10px 30px black;
+        transition-duration: 1s;
+        width: 355px;
+        border-radius: 35px;
+    }
+}
+
+@media(min-width:1024px) {
+    .foto-baile {
+        width: 450px;
+        margin-left: 100px;
+
+        &:hover {
+            box-shadow: 10px 10px 30px black;
+            transition-duration: 1s;
+            width: 454px;
+            border-radius: 35px;
+        }
+    }
+}
+
+.texto-clases {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 15px 15px;
+}
+
+/* Seguna seccion academia */
+
+.portada-container-academia2 {
+    display: flex;
+    /*-- Direccion de los elementos--*/
+    flex-direction: column;
+    /*---Multilinea---
+    flex-wrap: wrap;*/
+    /*-- Distribucion de los elementos--*/
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-texto2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.texto-clases2 {
+    text-align: center;
+}
+
+.foto-baile2 {
+    width: 250px;
+    border-radius: 30px;
+
+    &:hover {
+        box-shadow: 10px 10px 30px black;
+        transition-duration: 1s;
+        width: 254px;
+        border-radius: 35px;
+    }
+}
+
+@media(min-width:768px) {
+    .foto-texto2 {
+        flex-direction: row-reverse;
+    }
+
+    .foto-baile2 {
+        width: 350px;
+    }
+}
+
+@media(min-width:1024px) {
+    .foto-baile2 {
+        width: 450px;
+        margin-right: 100px;
+
+        &:hover {
+            box-shadow: 10px 10px 30px black;
+            transition-duration: 1s;
+            width: 454px;
+            border-radius: 35px;
+        }
+    }
+}

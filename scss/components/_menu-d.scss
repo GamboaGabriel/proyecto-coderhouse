@@ -1,0 +1,88 @@
+/*---Menu Hamburguesa---*/
+
+@media(max-width:767px) {
+
+    .nav-principal {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 7px;
+        background-color: rgba(72, 72, 72, 0.967);
+        padding: 0.5rem 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+
+
+        -webkit-transition: $animacion-carga;
+        -moz-transition: $animaciion-carga2;
+        transition: $animaciion-transicion;
+
+    }
+
+    .nav-principal.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .icon-list-cerrar {
+        cursor: pointer;
+        color: white;
+        font-size: 2.5rem;
+        padding: 0.5rem 2rem;
+
+        &:hover {
+            transition-duration: .4s;
+            transition: .5s linear;
+            -webkit-transition: $animacion-carga;
+            -moz-transition: $animaciion-carga2;
+            transition: $animaciion-transicion;
+            text-shadow: 0 0 10px #fff,
+                0 0 15px #fff,
+                0 0 20px #fff;
+        }
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: end;
+        gap: 2.3rem;
+    }
+
+    .icon-list-abrir {
+        font-size: 3.3rem;
+        cursor: pointer;
+    }
+}
+
+@media(min-width:768px) {
+    .nav-principal {
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 1rem;
+
+        li a {
+            display: flex;
+        }
+    }
+
+    .nav .nav-principal {
+        display: flex;
+    }
+}
+
+@media(min-width:1100px) {
+
+    .nav,
+    .footer {
+        gap: 3rem
+    }
+}

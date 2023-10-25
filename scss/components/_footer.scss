@@ -1,0 +1,87 @@
+/*------------ Pie de pagina de la web-------------- */
+
+.footer {
+    background-color: $color-de-fondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-family: $fuente-de-la-web;
+    color: $color-de-fuente;
+    box-shadow: 1px 1px 20px#575757;
+
+    -webkit-transition: $animacion-carga;
+    -moz-transition: $animaciion-carga2;
+    transition: $animaciion-transicion;
+
+    &:hover {
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        border-radius: 10px;
+        transition-duration: .2s;
+    }
+}
+
+li a:hover {
+    color: rgb(192, 192, 0);
+    // text-decoration: underline;
+    font-style: oblique;
+    transition-duration: .2s;
+}
+
+@media(min-width:768px) {
+    .footer {
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+.tit-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.caja-footer {
+    text-align: center;
+    justify-self: center;
+}
+
+.caja-footer1 {
+    text-align: center;
+}
+
+.redes {
+    list-style: none;
+    padding: 10px 20px;
+    text-align: left;
+    line-height: 1.5rem;
+
+    a {
+        color: $color-de-fuente;
+    }
+}
+
+.contactanos-suscribete {
+    text-decoration: none;
+    color: $color-de-fuente;
+}
+
+.mas {
+    text-align: center;
+    max-width: 300px;
+}
+
+@media (min-width: 800px) {
+    .redes {
+        margin-bottom: 50px;
+    }
+}
+
+.derechos {
+    border-top: 1px solid white;
+    font-family: $fuente-de-la-web;
+    font-size: 1rem;
+    color: $color-de-fuente;
+    background-color: black;
+    text-align: center;
+}

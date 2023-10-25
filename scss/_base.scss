@@ -11,3 +11,21 @@ $color-de-fuente: #fff;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Fondo de la web */
+#portada-img {
+
+    /* background-color: #000000;
+    background: linear-gradient(to right, #000000, #464646);*/
+    background-image: url(../img/pete-f-SXDfG6HOyX4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+a{
+    text-shadow: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}

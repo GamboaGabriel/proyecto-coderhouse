@@ -1,0 +1,113 @@
+
+
+/*----------------- Hoja de estilos seccion Nosotros/Profes ----------------*/
+
+.portada-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+
+    padding: 10px 1px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 20px black;
+    max-width: 600px;
+    margin: 30px;
+
+    text-align: center;
+
+    background-color: $color-de-fondo;
+    background: linear-gradient(to right, #6d6d6d, #000000);
+}
+
+@media(min-width:430px) {
+    .portada-nosotros {
+        margin: 50px auto;
+    }
+}
+
+.profes {
+    font-size: 1.3rem;
+    font-family: $fuente-de-la-web;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 8px rgba(0, 0, 0, 0.651);
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.cv {
+    font-size: 1.1rem;
+    font-family: $fuente-de-la-web;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.404);
+    padding: 40px 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.formulario-nosotros {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 22px;
+    font-family: $fuente-de-la-web;
+
+    -webkit-transition: $animacion-carga;
+    -moz-transition: $animaciion-carga2;
+    transition: $animaciion-transicion;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+
+        &:hover {
+            color: rgb(163, 163, 163);
+        }
+    }
+}
+
+.caja-blanca-formulario2 {
+    background-color: #9b9b9b;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 70%;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.418);
+
+    -webkit-transition: $animacion-carga;
+    -moz-transition: $animaciion-carga2;
+    transition: $animaciion-transicion;
+}
+
+.boton-enviar2 {
+    font-family: $fuente-de-la-web;
+    background-color: $color-de-fondo;
+    color: $color-de-fuente;
+    font-size: .9rem;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+@media (min-width:410px) {
+    .boton-enviar2 {
+        margin: 10px 0 0 100px;
+    }
+
+    .caja-blanca-formulario2 {
+        width: 80%;
+    }
+}
