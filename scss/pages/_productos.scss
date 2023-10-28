@@ -66,27 +66,13 @@ article .label-radio {
     }
 }
 
-.imagen-zapato {
-    height: 80%;
-}
-
 .h3-producto {
     font-size: 1.2rem;
     text-shadow: 1px 0.2px rgb(182, 182, 182);
 }
 
-/* Segundo recuadro */
-.imagen-vestido {
-    height: 80%;
-}
-
-/* Tercer recuadro */
-.imagen-vestido-corto {
-    height: 80%;
-}
-
-/* Cuarto recuadro */
-.imagen-accesorios {
+/* Recuadros de categorias*/
+.imagen-zapato, .imagen-vestido,.imagen-vestido-corto, .imagen-accesorios {
     height: 80%;
 }
 
@@ -99,8 +85,6 @@ article .label-radio {
 }
 
 /* Segunda seccion de la pag productos */
-
-
 
 .solo-zapatos {
     font-family: $fuente-de-la-web;

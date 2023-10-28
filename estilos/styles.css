@@ -20,6 +20,7 @@ a {
   text-shadow: none;
   text-decoration: none;
   text-decoration-line: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Formulario de la pagina principal de la web */
@@ -136,6 +137,63 @@ a {
     display: none;
   }
 }
+.form-contenedor form .form-icons {
+  padding: 0 0 15px 0;
+}
+
+.oculto {
+  font-weight: bold;
+}
+
+.form-contenedor {
+  background: linear-gradient(to right, #000000, #464646);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  max-width: 500px;
+  margin-top: 30px;
+}
+.form-contenedor span {
+  font-size: 0.9rem;
+}
+.form-contenedor h2 {
+  padding-bottom: 20px;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+input {
+  background-color: #b6b6b6;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
 /* ------->Formulario para escritorio <-------- */
 .formulario2 {
   display: none;
@@ -788,11 +846,13 @@ li a:hover {
   gap: 5vw;
 }
 
-.foto-baile {
+.foto-baile,
+.foto-baile2 {
   width: 250px;
   border-radius: 30px;
 }
-.foto-baile:hover {
+.foto-baile:hover,
+.foto-baile2:hover {
   box-shadow: 10px 10px 30px black;
   transition-duration: 1s;
   width: 254px;
@@ -806,7 +866,15 @@ li a:hover {
   .foto-baile {
     width: 350px;
   }
-  .foto-baile:hover,
+  .foto-baile:hover {
+    box-shadow: 10px 10px 30px black;
+    transition-duration: 1s;
+    width: 355px;
+    border-radius: 35px;
+  }
+  .foto-baile2 {
+    width: 350px;
+  }
   .foto-baile2:hover {
     box-shadow: 10px 10px 30px black;
     transition-duration: 1s;
@@ -820,6 +888,16 @@ li a:hover {
     margin-left: 100px;
   }
   .foto-baile:hover {
+    box-shadow: 10px 10px 30px black;
+    transition-duration: 1s;
+    width: 454px;
+    border-radius: 35px;
+  }
+  .foto-baile2 {
+    width: 450px;
+    margin-right: 100px;
+  }
+  .foto-baile2:hover {
     box-shadow: 10px 10px 30px black;
     transition-duration: 1s;
     width: 454px;
@@ -853,35 +931,9 @@ li a:hover {
   text-align: center;
 }
 
-.foto-baile2 {
-  width: 250px;
-  border-radius: 30px;
-}
-.foto-baile2:hover {
-  box-shadow: 10px 10px 30px black;
-  transition-duration: 1s;
-  width: 254px;
-  border-radius: 35px;
-}
-
 @media (min-width: 768px) {
   .foto-texto2 {
     flex-direction: row-reverse;
-  }
-  .foto-baile2 {
-    width: 350px;
-  }
-}
-@media (min-width: 1024px) {
-  .foto-baile2 {
-    width: 450px;
-    margin-right: 100px;
-  }
-  .foto-baile2:hover {
-    box-shadow: 10px 10px 30px black;
-    transition-duration: 1s;
-    width: 454px;
-    border-radius: 35px;
   }
 }
 /*------------- Hoja de estilos seccion Productos -------------*/
@@ -943,27 +995,13 @@ article .label-radio:hover {
   border-radius: 10px;
 }
 
-.imagen-zapato {
-  height: 80%;
-}
-
 .h3-producto {
   font-size: 1.2rem;
   text-shadow: 1px 0.2px rgb(182, 182, 182);
 }
 
-/* Segundo recuadro */
-.imagen-vestido {
-  height: 80%;
-}
-
-/* Tercer recuadro */
-.imagen-vestido-corto {
-  height: 80%;
-}
-
-/* Cuarto recuadro */
-.imagen-accesorios {
+/* Recuadros de categorias*/
+.imagen-zapato, .imagen-vestido, .imagen-vestido-corto, .imagen-accesorios {
   height: 80%;
 }
 
@@ -1053,7 +1091,7 @@ article .label-radio:hover {
     margin: 50px auto;
   }
 }
-.profes {
+.titulo-ser-parte {
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
   font-style: oblique;
@@ -1063,7 +1101,7 @@ article .label-radio:hover {
   margin: 30px 10px;
 }
 
-.cv {
+.titulo-enviar-curriculum {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
   font-style: oblique;

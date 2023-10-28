@@ -125,7 +125,71 @@
     }
 }
 
+.form-contenedor form .form-icons {
+    padding: 0 0 15px 0;
+}
+
+.oculto {
+    font-weight: bold;
+
+}
+
+.form-contenedor {
+    background: linear-gradient(to right, #000000, #464646);
+    
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+    margin-top: 30px;
+
+    span {
+        font-size: .9rem;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+}
+
+button {
+    background-color: #000000;
+    color: $color-de-fuente;
+    font-size: .9rem;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+
+}
+
+input {
+    background-color: #b6b6b6;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+
+
 /* ------->Formulario para escritorio <-------- */
+
 .formulario2 {
     display: none;
 }
