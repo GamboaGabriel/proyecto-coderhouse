@@ -23,6 +23,75 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+/*---Menu Hamburguesa---*/
+@media (max-width: 767px) {
+  .nav-principal {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 7px;
+    background-color: rgba(72, 72, 72, 0.967);
+    padding: 0.5rem 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .nav-principal.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .icon-list-cerrar {
+    cursor: pointer;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 2rem;
+  }
+  .icon-list-cerrar:hover {
+    transition-duration: 0.4s;
+    transition: 0.5s linear;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: end;
+    gap: 2.3rem;
+  }
+  .icon-list-abrir {
+    font-size: 3.3rem;
+    cursor: pointer;
+  }
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    align-items: center;
+  }
+  .nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav li a {
+    display: flex;
+  }
+  .nav .nav-principal {
+    display: flex;
+  }
+}
+@media (min-width: 1100px) {
+  .footer {
+    gap: 3rem;
+  }
+}
 /* Formulario de la pagina principal de la web */
 .portada2 {
   display: flex;
@@ -128,7 +197,7 @@ a {
     padding-top: 100px;
   }
   .boton-enviar {
-    margin: 50px 90px;
+    margin: 50px 0px;
     padding: 10px 60px 10px 60px;
   }
 }
@@ -179,7 +248,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 0px;
   height: 100%;
 }
 
@@ -476,6 +545,20 @@ input {
   transition-duration: 0.8s;
 }
 
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav li a {
+    display: flex;
+  }
+}
+@media (min-width: 1100px) {
+  .nav {
+    gap: 3rem;
+  }
+}
 .contenedor-titulo-img {
   width: 100%;
   display: grid;
@@ -592,75 +675,6 @@ input {
   .titulo:hover {
     transition-duration: 0.7s;
     font-size: 5rem;
-  }
-}
-/*---Menu Hamburguesa---*/
-@media (max-width: 767px) {
-  .nav-principal {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 7px;
-    background-color: rgba(72, 72, 72, 0.967);
-    padding: 0.5rem 0;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-  }
-  .nav-principal.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  .icon-list-cerrar {
-    cursor: pointer;
-    color: white;
-    font-size: 2.5rem;
-    padding: 0.5rem 2rem;
-  }
-  .icon-list-cerrar:hover {
-    transition-duration: 0.4s;
-    transition: 0.5s linear;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
-  }
-  .nav {
-    flex-direction: column;
-    align-items: end;
-    gap: 2.3rem;
-  }
-  .icon-list-abrir {
-    font-size: 3.3rem;
-    cursor: pointer;
-  }
-}
-@media (min-width: 768px) {
-  .nav-principal {
-    align-items: center;
-  }
-  .nav {
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .nav li a {
-    display: flex;
-  }
-  .nav .nav-principal {
-    display: flex;
-  }
-}
-@media (min-width: 1100px) {
-  .nav,
-  .footer {
-    gap: 3rem;
   }
 }
 /*------------ Pie de pagina de la web-------------- */
@@ -1255,12 +1269,6 @@ article .label-radio:hover {
     height: 260px;
   }
 }
-@media (min-width: 1100px) {
-  .mapa {
-    width: 600px;
-    height: 260px;
-  }
-}
 .gracias {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
@@ -1269,17 +1277,40 @@ article .label-radio:hover {
   color: #fff;
   text-shadow: 10px 10px rgba(138, 138, 138, 0.089);
   text-align: center;
-  margin-top: 100px;
 }
 
 @media (min-width: 468px) {
   .gracias {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 768px) {
   .redes-contacto {
     padding-left: 25%;
+  }
+}
+@media (min-width: 1100px) {
+  .mapa {
+    width: 600px;
+    height: 260px;
+  }
+  .gracias {
+    font-size: 4rem;
+    margin-top: 100px;
+  }
+  .gracias h2 {
+    overflow: hidden;
+    border-right: 0.15em solid #ffffff;
+    white-space: nowrap;
+    animation: escribir 2s steps(40, end) 1 alternate;
+  }
+  @keyframes escribir {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
   }
 }
 

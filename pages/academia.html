@@ -2,16 +2,35 @@
 <html lang="es">
 
 <head>
+    <!-- SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Tú lugar de formación y pasión en el mundo de la danza. Nuestra academia de danza es el corazón de la expresión artística, donde la técnica y la creatividad se fusionan en cada clase. Experimenta la magia de aprender y crecer como bailarín o bailarina en un entorno inspirador y acogedor.">
-    <title>Fuego Gitano | Academia</title>
+    <meta name="description" content="Tú lugar de formación y pasión en el mundo de la danza. Nuestra academia de danza es el corazón de la expresión artística, donde la técnica y la creatividad se fusionan en cada clase. Experimenta la magia de aprender y crecer como bailarín o bailarina en un entorno inspirador y acogedor.">
+
+    <!-- TITULO -->
+    <title>Fuego Gitano | Academia de Danza</title>
+
+    <!-- ANIMACIONES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+
+    <!-- FRAMEWORKS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+
+    <!-- ICONO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
 </head>
 
 <body class="fondo">
@@ -61,20 +80,25 @@
 
         <main>
 
-            <section class="portada-container-academia">
+            <section class="portada-container-academia" >
 
-                <div class="titulo-clases">
+                <div class="titulo-clases" data-aos="zoom-in">
                     <h2>Nuestras Clases</h2>
                 </div>
 
-                <article class="foto-texto">
-                    <div class="imagen-clases">
+                <article class="foto-texto" >
+                    <div class="imagen-clases" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
 
                         <img class="foto-baile" src="../img/foto-clases-1.jpg" alt="Clase de danza">
 
                     </div>
 
-                    <div class="texto-clases">
+                    <div class="texto-clases" 
+                    data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-duration="1500">
 
                         <p>En nuestra academia de danza, la excelencia se combina con la pasión en cada clase que ofrecemos. Nuestro enfoque en la formación se centra en brindarte una experiencia de aprendizaje enriquecedora y gratificante. </p>
                         <p>Nuestras clases se diseñan cuidadosamente para atender tanto a principiantes que están dando sus primeros pasos en la danza como a bailarines experimentados que desean perfeccionar su técnica y expresión. Cada sesión se imparte con una combinación única de profesionalismo y creatividad.
@@ -84,19 +108,24 @@
 
                 </article>
             </section>
-            <section class="portada-container-academia2">
-                <div class="titulo-clases">
+            <section class="portada-container-academia2" >
+                <div class="titulo-clases" data-aos="zoom-in">
                     <h3> Clases Personalizadas </h3>
                 </div>
 
                 <article class="foto-texto foto-texto2">
-                    <div class="imagen-clases imagen-clases2">
+                    <div class="imagen-clases imagen-clases2" >
 
-                        <img class="foto-baile2" src="../img/foto-clases-2.jpg" alt="Clase de danza">
+                        <img class="foto-baile2" src="../img/foto-clases-2.jpg" alt="Clase de danza" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500">
 
                     </div>
 
-                    <div class="texto-clases texto-clases2">
+                    <div class="texto-clases texto-clases2" 
+                    data-aos="zoom-out-right"
+                    data-aos-duration="1500">
 
                         <p>Las clases se programan de manera conveniente para adaptarse a tu       horario, y nuestros espacios de enseñanza están equipados con las instalaciones y tecnología adecuadas para optimizar tu experiencia de aprendizaje.</p>
                         
@@ -111,10 +140,10 @@
 
         </main>
 
-        <!------>
+        <!-- FOOTER---->
         <footer class="footer">
 
-            <div class="caja-footer">
+            <div class="caja-footer" data-aos="fade-down">
 
                 <h3 class="tit-footer">Mi Contacto</h3>
 
@@ -125,7 +154,8 @@
 
             </div>
 
-            <div class="caja-footer1">
+            <div class="caja-footer1" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
 
                 <h3 class="tit-footer"> Comparte tambien...</h3>
 
@@ -141,7 +171,7 @@
 
             </div>
 
-            <div class="caja-footer2">
+            <div class="caja-footer2" data-aos="fade-down">
 
                 <h3 class="tit-footer">Más Informacón...</h3>
 
@@ -162,7 +192,11 @@
             <p>&copy; 2023 FUEGO GITANO. Todos los derechos reservados. <i class="bi bi-patch-check"></i></p>
         </div>
     </div>
-    <script src="../estilos/menu.js"></script>
+    <script src="./estilos/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

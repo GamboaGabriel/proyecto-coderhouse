@@ -1,226 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre un mundo de elegancia y estilo en nuestra sección de 'Productos'. En nuestro instituto de danza, no solo fomentamos la pasión por el baile, sino que también ofrecemos una amplia gama de productos cuidadosamente seleccionados para complementar tu experiencia artística.
+    <meta name="description"
+        content="Tú lugar de formación y pasión en el mundo de la danza. Nuestra academia de danza es el corazón de la expresión artística, donde la técnica y la creatividad se fusionan en cada clase. Experimenta la magia de aprender y crecer como bailarín o bailarina en un entorno inspirador y acogedor.">
 
-    Explora nuestra colección de vestidos, zapatos y accesorios diseñados para bailarines y bailarinas de todos los niveles. Desde los hermosos vestidos que te harán sentir como una estrella en el escenario hasta los zapatos que te proporcionarán el soporte y la comodidad necesarios para deslizarte por el suelo, nuestra selección se ha creado pensando en ti.">
+    <!-- TITULO -->
     <title>Fuego Gitano | Productos</title>
-    
+
+    <!-- ANIMACIONES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="../estilos/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+
+    <!-- FRAMEWORKS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+
+    <!-- ICONO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
 </head>
 
-    <body class="fondo">
+<body class="fondo">
 
-        <div id="portada-img">
+    <div id="portada-img">
 
-            <header class="cabeza">
-                <div class="contenedor-titulo-img">
-                    <div id="logo">
-                        <a href="../index.html"><img src="../img/logo(1).png" alt="LOGO" class="logo-fg" ></a>
-                    </div>
-
-                    <div id="titulo-fuego-gitano">
-                        <h1><a href="../index.html" class="titulo">F<span>uego</span> G<span>itano</span></a></h1>
-                    </div>
-
-                    <div id="icon-dancer">
-
-                        <img src="../img/bailarina-pequeña.png" alt="bailarina" class="bailarina-pequeña">
-
-                    </div>
-
-                    <div class="icon-list-abrir">
-                        <i class="bi bi-list" id="abrir"></i>
-                    </div>
-                    
+        <header class="cabeza">
+            <div class="contenedor-titulo-img">
+                <div id="logo">
+                    <a href="../index.html"><img src="../img/logo(1).png" alt="LOGO" class="logo-fg"></a>
                 </div>
-                
-                <nav class="nav-principal" id="nav">
-                    <div class="icon-list-cerrar">
-                    <i class="bi bi-x-lg" id="cerrar"></i>
-                    </div>
-                    <ul class="nav">
 
-                        <li><a href="../pages/academia.html">Academia <i class="bi bi-bank"></i></a></li>
-                        <li><a href="../pages/productos.html">Productos <i class="bi bi-bag"></i></a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros/Profes <i class="bi bi-person fill"></i></a></li>
-                        <li><a href="../pages/contacto.html">Contacto <i class="bi bi-chat-left-text"></i></a></li>
-                
-                    </ul>
+                <div id="titulo-fuego-gitano">
+                    <h1><a href="../index.html" class="titulo">F<span>uego</span> G<span>itano</span></a></h1>
+                </div>
 
-                </nav>
+                <div id="icon-dancer">
 
-                
-            </header>
-
-            <main>
-
-                <section >
-
-                    <div class="titulo-categorias">
-                        <h2> Catergorias </h2>
-                    </div>
-
-                    <article class="articulo-zapato-container">
-
-
-                        <input type="radio" name="zapato" id="primer-opcion-zapato" value="Male" />
-                        <label for="primer-opcion-zapato" class="label-radio">
-                            <div class="caja-categorias__productos elemento1__producto">
-                                <img src="../img/zapato.jpg" alt="zapato Rojo" class="imagen-zapato">
-                                <h3 class="h3-producto">Zapatos</h3>
-                            </div>
-                        </label>
-
-                        <input type="radio" name="vestido español" id="segunda-opcion-vestido"/>
-                        <label for="segunda-opcion-vestido" class="label-radio">
-                            <div class="caja-categorias__productos cubo2">
-                                <img src="../img/vestido.jpg" alt="Vestido español" class="imagen-vestido">
-                                <h3 class="h3-producto">Vestidos Español</h3>
-                            </div>
-                        </label>
-
-                        <input type="radio" name="vestido flamenco" id="tercer-opcion-vestido"/>
-                        <label for="tercer-opcion-vestido" class="label-radio">
-                            <div class="caja-categorias__productos cubo3">
-                                <img src="../img/flamenco.jpg" alt="Vestido flamenco" class="imagen-vestido-corto">
-                                <h3 class="h3-producto">Vestidos Flamenco</h3>
-                            </div>
-                        </label>
-
-                        <input type="radio" name="accesorios" id="cuarta-opcion-accesorios"/>
-                        <label for="cuarta-opcion-accesorios" class="label-radio">
-                            <div class="caja-categorias__productos cubo4">
-                                <img src="../img/accesorios.jpg" alt="Accesorios de danza" class="imagen-accesorios">
-                                <h3 class="h3-producto">Accesorios</h3>
-                            </div>
-                        </label>
-
-                    </article>
-
-                </section>
-
-                <section class="seccion-productos-zapatos">
-
-                    <div class="titulo-categorias">
-                        <h2>Zapatos</h2>
-                    </div>
-
-                    <article class="solo-zapatos">
-
-                        <div class="elemento1__producto articulo">
-                            
-                            <img src="../img/zapato.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
-                            <h3 class="h3-producto seccion-zapatos">Zapato Rojo Liso</h3>
-                            <span>$65.000</span>
-                            <input type="submit" value="Comprar" class="boton-comprar">
-                            
-                        </div>
-
-                        <div class="elemento1__producto articulo">
-                            
-                            <img src="../img/zapato2.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
-                            <h3 class="h3-producto seccion-zapatos">Zapato Rojo y Beige</h3>
-                            <span>$60.000</span>
-                            <input type="submit" value="Comprar" class="boton-comprar">
-                            
-                        </div>
-
-                        <div class="elemento1__producto articulo">
-                            
-                            <img src="../img/zapato3.jpg " alt="zapato Rojo Alto" class="imagen-zapato">
-                            <h3 class="h3-producto seccion-zapatos">Zapato Crema y Verde</h3>
-                            <span>$49.999</span>
-                            <input type="submit" value="Comprar" class="boton-comprar">
-                            
-                        </div>
-
-                        <div class="elemento1__producto articulo">
-                            
-                            <img src="../img/zapato4.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
-                            <h3 class="h3-producto seccion-zapatos">Zapato Amarillo y Azul</h3>
-                            <span>$45.900</span>
-                            <input type="submit" value="Comprar" class="boton-comprar">
-                            
-                        </div>
-
-                        <div class="elemento1__producto articulo">
-                            
-                            <img src="../img/Zapatos-de-flamenco.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
-                            <h3 class="h3-producto seccion-zapatos">Zapato taco alto</h3>
-                            <span>$75.000</span>
-                            <input type="submit" value="Comprar" class="boton-comprar">
-                            
-                        </div>
-
-                        <div class="elemento1__producto articulo">
-                            
-                            <img src="../img/zapato-beige.png" alt="zapato Rojo Alto" class="imagen-zapato">
-                            <h3 class="h3-producto seccion-zapatos">Zapato Beige liso</h3>
-                            <span>$48.900</span>
-                            <input type="submit" value="Comprar" class="boton-comprar">
-                            
-                        </div>
-
-                    </article>
-
-                </section>
-
-            </main>
-            
-    <!----> <footer class="footer">
-
-                <div class="caja-footer">
-
-                    <h3 class="tit-footer">Mi Contacto</h3>
-                    
-                    <ul class="redes">
-                        <li><i class="bi bi-phone"> Tel: +54 264 516 1525</i></li>
-                        <li><i class="bi bi-envelope at"> email: maxisjrc@gmail.com</i></li>                
-                    </ul>
+                    <img src="../img/bailarina-pequeña.png" alt="bailarina" class="bailarina-pequeña">
 
                 </div>
 
-                <div class="caja-footer1">
-
-                    <h3  class="tit-footer"> Comparte tambien...</h3>
-
-                    <ul class="redes">
-
-                        <li><a href="#"><i class="bi bi-instagram"> Compartir en Instagram</i></a></li>
-                        <li><a href="#"><i class="bi bi-twitter"> Compartir en Twiter</i></a></li>
-                        <li><a href="#"><i class="bi bi-facebook"> Compartir en Facebook</i></a></li>
-                        <li><a href="#"><i class="bi bi-google"> Compartir en GooglePlus</i></a></li>
-                        <li><a href="#"><i class="bi bi-linkedin"> Compartir en Linkedin</i></a></li>
-
-                    </ul>
-
+                <div class="icon-list-abrir">
+                    <i class="bi bi-list" id="abrir"></i>
                 </div>
 
-                <div class="caja-footer2">
-
-                    <h3 class="tit-footer">Más Informacón...</h3>
-
-                    <ul class="redes mas">
-
-                        <li><a href="../pages/contacto.html" class="contactanos-suscribete"><i class="bi bi-send-plus"> Contactanos...</i></a></li>
-                        <li><a href="#registro" class="contactanos-suscribete"><li class="bi bi-person lines fill"> Suscribete...</li></a></li>
-                        <li>Sígueme en Twitter o Suscríbete para ser el primero en saber
-                            cuando lanzamos nuevos productos.</li>
-                    </ul>
-
-                </div>
-                
-            </footer>
-            <div class="derechos">
-                <p>&copy; 2023 FUEGO GITANO. Todos los derechos reservados. <i class="bi bi-patch-check"></i></p>
             </div>
+
+            <nav class="nav-principal" id="nav">
+                <div class="icon-list-cerrar">
+                    <i class="bi bi-x-lg" id="cerrar"></i>
+                </div>
+                <ul class="nav">
+
+                    <li><a href="../pages/academia.html">Academia <i class="bi bi-bank"></i></a></li>
+                    <li><a href="../pages/productos.html">Productos <i class="bi bi-bag"></i></a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros/Profes <i class="bi bi-person fill"></i></a></li>
+                    <li><a href="../pages/contacto.html">Contacto <i class="bi bi-chat-left-text"></i></a></li>
+
+                </ul>
+
+            </nav>
+
+
+        </header>
+
+        <main>
+
+            <section>
+
+                <div class="titulo-categorias" data-aos="zoom-in" data-aos-duration="700">
+                    <h2> Catergorias </h2>
+                </div>
+
+                <article class="articulo-zapato-container" data-aos="fade-left" data-aos-duration="1200">
+
+
+                    <input type="radio" name="zapato" id="primer-opcion-zapato" value="Male" />
+                    <label for="primer-opcion-zapato" class="label-radio">
+                        <div class="caja-categorias__productos elemento1__producto">
+                            <img src="../img/zapato.jpg" alt="zapato Rojo" class="imagen-zapato">
+                            <h3 class="h3-producto">Zapatos</h3>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="vestido español" id="segunda-opcion-vestido" />
+                    <label for="segunda-opcion-vestido" class="label-radio">
+                        <div class="caja-categorias__productos cubo2">
+                            <img src="../img/vestido.jpg" alt="Vestido español" class="imagen-vestido">
+                            <h3 class="h3-producto">Vestidos Español</h3>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="vestido flamenco" id="tercer-opcion-vestido" />
+                    <label for="tercer-opcion-vestido" class="label-radio">
+                        <div class="caja-categorias__productos cubo3">
+                            <img src="../img/flamenco.jpg" alt="Vestido flamenco" class="imagen-vestido-corto">
+                            <h3 class="h3-producto">Vestidos Flamenco</h3>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="accesorios" id="cuarta-opcion-accesorios" />
+                    <label for="cuarta-opcion-accesorios" class="label-radio">
+                        <div class="caja-categorias__productos cubo4">
+                            <img src="../img/accesorios.jpg" alt="Accesorios de danza" class="imagen-accesorios">
+                            <h3 class="h3-producto">Accesorios</h3>
+                        </div>
+                    </label>
+
+                </article>
+
+            </section>
+
+            <section class="seccion-productos-zapatos">
+
+                <div class="titulo-categorias" data-aos="zoom-in" data-aos-duration="700">
+                    <h2>Zapatos</h2>
+                </div>
+
+                <article class="solo-zapatos">
+
+                    <div class="elemento1__producto articulo" data-aos="zoom-out-up">
+
+                        <img src="../img/zapato.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
+                        <h3 class="h3-producto seccion-zapatos">Zapato Rojo Liso</h3>
+                        <span>$65.000</span>
+                        <input type="submit" value="Comprar" class="boton-comprar">
+
+                    </div>
+
+                    <div class="elemento1__producto articulo" data-aos="zoom-out-up">
+
+                        <img src="../img/zapato2.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
+                        <h3 class="h3-producto seccion-zapatos">Zapato Rojo y Beige</h3>
+                        <span>$60.000</span>
+                        <input type="submit" value="Comprar" class="boton-comprar">
+
+                    </div>
+
+                    <div class="elemento1__producto articulo" data-aos="zoom-out-up">
+
+                        <img src="../img/zapato3.jpg " alt="zapato Rojo Alto" class="imagen-zapato">
+                        <h3 class="h3-producto seccion-zapatos">Zapato Crema y Verde</h3>
+                        <span>$49.999</span>
+                        <input type="submit" value="Comprar" class="boton-comprar">
+
+                    </div>
+
+                    <div class="elemento1__producto articulo" data-aos="zoom-out-up">
+
+                        <img src="../img/zapato4.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
+                        <h3 class="h3-producto seccion-zapatos">Zapato Amarillo y Azul</h3>
+                        <span>$45.900</span>
+                        <input type="submit" value="Comprar" class="boton-comprar">
+
+                    </div>
+
+                    <div class="elemento1__producto articulo" data-aos="zoom-out-up">
+
+                        <img src="../img/Zapatos-de-flamenco.jpg" alt="zapato Rojo Alto" class="imagen-zapato">
+                        <h3 class="h3-producto seccion-zapatos">Zapato taco alto</h3>
+                        <span>$75.000</span>
+                        <input type="submit" value="Comprar" class="boton-comprar">
+
+                    </div>
+
+                    <div class="elemento1__producto articulo" data-aos="zoom-out-up">
+
+                        <img src="../img/zapato-beige.png" alt="zapato Rojo Alto" class="imagen-zapato">
+                        <h3 class="h3-producto seccion-zapatos">Zapato Beige liso</h3>
+                        <span>$48.900</span>
+                        <input type="submit" value="Comprar" class="boton-comprar">
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER---->
+        <footer class="footer">
+
+            <div class="caja-footer" data-aos="fade-down">
+
+                <h3 class="tit-footer">Mi Contacto</h3>
+
+                <ul class="redes">
+                    <li><i class="bi bi-phone"> Tel: +54 264 516 1525</i></li>
+                    <li><i class="bi bi-envelope at"> email: maxisjrc@gmail.com</i></li>
+                </ul>
+
+            </div>
+
+            <div class="caja-footer1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+
+                <h3 class="tit-footer"> Comparte tambien...</h3>
+
+                <ul class="redes">
+
+                    <li><a href="#"><i class="bi bi-instagram"> Compartir en Instagram</i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"> Compartir en Twiter</i></a></li>
+                    <li><a href="#"><i class="bi bi-facebook"> Compartir en Facebook</i></a></li>
+                    <li><a href="#"><i class="bi bi-google"> Compartir en GooglePlus</i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"> Compartir en Linkedin</i></a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="caja-footer2" data-aos="fade-down">
+
+                <h3 class="tit-footer">Más Informacón...</h3>
+
+                <ul class="redes mas">
+
+                    <li><a href="../pages/contacto.html" class="contactanos-suscribete"><i class="bi bi-send-plus">
+                                Contactanos...</i></a></li>
+                    <li><a href="#registro" class="contactanos-suscribete">
+                    <li class="bi bi-person lines fill"> Suscribete...</li></a></li>
+                    <li>Sígueme en Twitter o Suscríbete para ser el primero en saber
+                        cuando lanzamos nuevos productos.</li>
+                </ul>
+
+            </div>
+
+        </footer>
+        <div class="derechos">
+            <p>&copy; 2023 FUEGO GITANO. Todos los derechos reservados. <i class="bi bi-patch-check"></i></p>
         </div>
-        <script src="../estilos/menu.js"></script>
-    </body>
+    </div>
+    <script src="./estilos/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
 </html>
