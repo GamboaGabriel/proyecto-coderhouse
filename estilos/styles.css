@@ -257,6 +257,12 @@ input {
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 8px;
+  }
+  .container2 button:hover {
+    color: black;
+    background: #707070;
+    box-shadow: inset 21px 21px 45px #373737, inset -21px -21px 45px #a9a9a9;
   }
   .container2 button.hidden {
     background-color: transparent;
@@ -743,8 +749,6 @@ li a:hover {
   display: flex;
   /*-- Direccion de los elementos--*/
   flex-direction: column;
-  /*---Multilinea---
-  flex-wrap: wrap;*/
   /*-- Distribucion de los elementos--*/
   justify-content: center;
   align-items: center;
@@ -1023,7 +1027,7 @@ article .label-radio:hover {
   gap: 50px;
   justify-content: space-around;
   align-items: center;
-  color: #fff;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -1046,7 +1050,7 @@ article .label-radio:hover {
 .articulo {
   font-size: 1.8rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.892);
+  background-color: #656565;
   width: 270px;
   height: 400px;
   border: 1px solid black;
@@ -1058,14 +1062,23 @@ article .label-radio:hover {
 }
 
 .boton-comprar {
-  border-radius: 50px;
   padding: 6px;
   margin-left: 30px;
-  background-color: rgba(80, 79, 79, 0.74);
   color: #fff;
   font-size: 1rem;
   font-style: oblique;
   font-family: "Montserrat", sans-serif;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 48px;
+  background: linear-gradient(145deg, #656565, #787878);
+  box-shadow: 16px 16px 32px #484848, -16px -16px 32px rgba(152, 152, 152, 0.662745098);
+}
+.boton-comprar:hover {
+  color: black;
+  border-radius: 48px;
+  background: #707070;
+  box-shadow: inset 16px 16px 32px #484848, inset -16px -16px 32px #989898;
 }
 
 /*----------------- Hoja de estilos seccion Nosotros/Profes ----------------*/
@@ -1160,10 +1173,15 @@ article .label-radio:hover {
   margin: 10px 0 0 10px;
   cursor: pointer;
 }
+.boton-enviar2:hover {
+  color: black;
+  background: #707070;
+  box-shadow: inset 21px 21px 45px #373737, inset -21px -21px 45px #a9a9a9;
+}
 
 @media (min-width: 410px) {
   .boton-enviar2 {
-    margin: 10px 0 0 100px;
+    margin: 10px 0 0 0px;
   }
   .caja-blanca-formulario2 {
     width: 80%;

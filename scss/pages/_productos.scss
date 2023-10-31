@@ -98,7 +98,7 @@ article .label-radio {
 
     justify-content: space-around;
     align-items: center;
-    color: $color-de-fuente;
+    color: black;
 }
 
 @media (min-width:768px) {
@@ -124,7 +124,7 @@ article .label-radio {
 .articulo {
     font-size: 1.8rem;
     text-align: center;
-    background-color: $color-de-fondo;
+    background-color: #656565;
 
     width: 270px;
     height: 400px;
@@ -140,12 +140,29 @@ article .label-radio {
 }
 
 .boton-comprar {
-    border-radius: 50px;
+    // border-radius: 50px;
     padding: 6px;
     margin-left: 30px;
-    background-color: rgba(80, 79, 79, 0.74);
+    // background-color: rgba(80, 79, 79, 0.74);
     color: $color-de-fuente;
     font-size: 1rem;
     font-style: oblique;
     font-family: $fuente-de-la-web;
+    width: 100px;
+    font-weight: bold;
+
+    border-radius: 48px;
+    background: linear-gradient(145deg, #656565, #787878);
+    box-shadow:  16px 16px 32px #484848,
+                -16px -16px 32px #989898a9;
+
+
+    &:hover {
+        color: black;
+        border-radius: 48px;
+        background: #707070;
+        box-shadow: inset 16px 16px 32px #484848,
+                    inset -16px -16px 32px #989898;
+
+    }
 }

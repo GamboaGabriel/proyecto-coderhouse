@@ -260,6 +260,14 @@ input {
             text-transform: uppercase;
             margin-top: 10px;
             cursor: pointer;
+            border-radius: 8px;
+            
+            &:hover {
+                color: black;
+                background: #707070;
+                box-shadow: inset 21px 21px 45px #373737,
+                    inset -21px -21px 45px #a9a9a9;
+            }
         }
 
         button.hidden {
