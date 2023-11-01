@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 /* Fondo de la web */
@@ -789,7 +790,7 @@ li a:hover {
   padding: 50px 30px;
   box-shadow: 1px 1px 20px rgba(97, 97, 97, 0.7411764706);
   border-radius: 25px;
-  width: 100vw;
+  width: 100%;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
