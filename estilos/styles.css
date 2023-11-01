@@ -534,11 +534,12 @@ input {
   color: white;
 }
 .nav li a:hover {
-  color: rgb(192, 192, 0);
-  /* text-decoration: none; */
-  font-style: oblique;
-  transition-duration: 0.2s;
-  font-size: 1.26rem;
+  color: rgb(184, 194, 0);
+  position: relative;
+  bottom: 5px;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 .nav li a:active {
   color: rgb(64, 64, 64);

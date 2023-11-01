@@ -80,11 +80,13 @@
         color: white;
 
         &:hover {
-            color: rgb(192, 192, 0);
-            /* text-decoration: none; */
-            font-style: oblique;
-            transition-duration: .2s;
-            font-size: 1.26rem;
+            color: rgb(184, 194, 0);
+            position: relative;
+            bottom: 5px;
+
+            -webkit-transition: $animacion-carga;
+            -moz-transition: $animaciion-carga2;
+            transition: $animaciion-transicion;
         }
 
         &:active {
