@@ -68,10 +68,14 @@
                 </div>
                 <ul class="nav">
                     <!-- SECCIONES DE LA WEB -->
-                    <li><a href="./pages/academia.html" data-aos="fade-down-right" data-aos-duration="500">Academia <i class="bi bi-bank"></i></a></li>
-                    <li><a href="./pages/productos.html" data-aos="fade-down-right" data-aos-duration="900">Productos <i class="bi bi-bag"></i></a></li>
-                    <li><a href="./pages/nosotros.html" data-aos="fade-down-left" data-aos-duration="900">Nosotros/Profes <i class="bi bi-person fill"></i></a></li>
-                    <li><a href="./pages/contacto.html" data-aos="fade-down-left" data-aos-duration="500">Contacto <i class="bi bi-chat-left-text"></i></a></li>
+                    <li><a href="./pages/academia.html" data-aos="fade-down-right" data-aos-duration="500">Academia <i
+                                class="bi bi-bank"></i></a></li>
+                    <li><a href="./pages/productos.html" data-aos="fade-down-right" data-aos-duration="900">Productos <i
+                                class="bi bi-bag"></i></a></li>
+                    <li><a href="./pages/nosotros.html" data-aos="fade-down-left"
+                            data-aos-duration="900">Nosotros/Profes <i class="bi bi-person fill"></i></a></li>
+                    <li><a href="./pages/contacto.html" data-aos="fade-down-left" data-aos-duration="500">Contacto <i
+                                class="bi bi-chat-left-text"></i></a></li>
 
                 </ul>
 
@@ -83,67 +87,78 @@
         <main>
 
             <section class="portada-container">
-
+                <!-- FORMULARIO N° 1 -->
                 <article class="caja portada2" id="portada2" data-aos="zoom-in-up">
-                    <!-- FORMULARIO N° 1 -->
+                    <!--  FORMULARIO CREA TU CUENTA -->
+                    <div id="registro-formulario" class="form-registro">
+                        <div class="login">
+                            <h2>Crea tu cuenta</h2>
+                            <div class="form-icons">
+                                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
 
-                    <div class="login">
-                        <h2 id="registro">Crea tu cuenta</h2>
-                        <div class="form-icons">
-                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div class="formulario">
+                            <form action="">
+
+                                <div>
+                                    <label for="nya" class="form"></label>
+                                    <input type="text" id="nya" placeholder="Nombre y Apellido"
+                                        class="caja-blanca-formulario">
+                                </div>
+                                <div>
+                                    <label for="mail" class="form"></label>
+                                    <input type="email" id="mail" placeholder="Correo electronico"
+                                        class="caja-blanca-formulario">
+                                </div>
+                                <div>
+                                    <label for="contraseña"></label>
+                                    <input type="password" id="contraseña" placeholder="Contraseña"
+                                        class="caja-blanca-formulario">
+                                </div>
+                                <div>
+                                    <label for="carrera">Elige tu carrera:</label>
+                                    <select name="" id="carrera" class="caja-blanca-formulario">
+                                        <option value="">Arabe</option>
+                                        <option value="">Español</option>
+                                        <option value="">Contemporaneo</option>
+                                        <option value="">Clasico</option>
+                                        <option value="">Flamenco</option>
+                                        <option value="">Otro</option>
+                                    </select>
+                                </div>
+                                <a href="#"> Recordar contraseña?</a>
+                                <div>
+                                    <input type="submit" value="Regístrate" class="boton-enviar">
+                                </div>
+                                <a href="#" id="enlace-iniciar-sesion">Iniciar Sesión</a>
+                            </form>
                         </div>
                     </div>
-
-                    <div class="formulario">
-                        <form action="">
-
-                            <div>
-                                <label for="nya" class="form"></label>
-                                <input type="text" id="nya" placeholder="Nombre y Apellido"
-                                    class="caja-blanca-formulario">
+                    <!--  FORMULARIO INICIA SESION -->
+                    <div class="form-contenedor" id="inicio-sesion-formulario">
+                        <div class="login">
+                            <h2>Inicia Sesión</h2>
+                            <div class="form-icons">
+                                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
-                            <div>
-                                <label for="mail" class="form"></label>
-                                <input type="email" id="mail" placeholder="Correo electronico"
-                                    class="caja-blanca-formulario">
-                            </div>
-                            <div>
-                                <label for="contraseña"></label>
-                                <input type="password" id="contraseña" placeholder="Contraseña"
-                                    class="caja-blanca-formulario">
-                            </div>
-                            <div>
-                                <label for="carrera">Elige tu carrera:</label>
-                                <select name="" id="carrera" class="caja-blanca-formulario">
-                                    <option value="">Arabe</option>
-                                    <option value="">Español</option>
-                                    <option value="">Contemporaneo</option>
-                                    <option value="">Clasico</option>
-                                    <option value="">Flamenco</option>
-                                    <option value="">Otro</option>
-                                </select>
-                            </div>
-                            <a href="#"> Recordar contraseña?</a>
-                            <div>
-                                <input type="submit" value="Regístrate" class="boton-enviar">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="form-contenedor">
-                        <div class="formulario login registrate1">
+                        </div>
+                        <div class="login registrate1">
                             <form>
-                                <h2>Inicia Sesión</h2>
+                                
                                 <span>utilice su correo electronico</span>
                                 <input type="email" placeholder="Correo electronico" class="caja-blanca-formulario">
                                 <input type="password" placeholder="Contraseña" class="caja-blanca-formulario">
                                 <a href="#"> Recordar contraseña?</a>
                                 <button class="boton-enviar">Iniciar Sesión</button>
-
                             </form>
+                            <a href="#" id="enlace-registro">Crear una Cuenta</a>
                         </div>
                     </div>
 
@@ -226,9 +241,9 @@
                 </article>
 
 
-                <article class="portada1" >
+                <article class="portada1">
 
-                    <div class="titulo-portada1" >
+                    <div class="titulo-portada1">
 
                         <h2 data-aos="zoom-out-down">El lenguaje de la Danza</h2>
 
@@ -236,7 +251,8 @@
 
                     <div class="parrafo-portada1">
 
-                        <p data-aos="zoom-out-up">La danza es una clase de arte que pone en evidencia la necesidad de profunda interrelación
+                        <p data-aos="zoom-out-up">La danza es una clase de arte que pone en evidencia la necesidad de
+                            profunda interrelación
                             entre corporeidad y espiritualidad en el ser humano.
                             El movimiento del cuerpo humano es, entonces, la clave de la danza. Recordemos las
                             más primitivas, indivisiblemente unidas a una visión ritual del acontecer humano: danzas
@@ -270,8 +286,7 @@
 
             </div>
 
-            <div class="caja-footer1" data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom">
+            <div class="caja-footer1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
 
                 <h3 class="tit-footer"> Comparte tambien...</h3>
 

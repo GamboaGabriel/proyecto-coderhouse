@@ -54,7 +54,7 @@
     font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
-    padding-left: 22px;
+    padding: 20px 10px 20px 10px;
     font-family: $fuente-de-la-web;
 
     -webkit-transition: $animacion-carga;
@@ -78,7 +78,7 @@
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
-    width: 70%;
+    width: 90%;
     outline: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.418);
 
@@ -89,16 +89,16 @@
 
 .boton-enviar2 {
     font-family: $fuente-de-la-web;
-    background-color: $color-de-fondo;
+    background-color: transparent;
     color: $color-de-fuente;
     font-size: .9rem;
     padding: 10px 10px;
-    border: 1px solid transparent;
+    border: 1px solid white;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 10px 0 ;
     cursor: pointer;
     &:hover {
         color: black;
@@ -114,6 +114,6 @@
     }
 
     .caja-blanca-formulario2 {
-        width: 80%;
+        // width: 80%;
     }
 }

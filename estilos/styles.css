@@ -163,6 +163,26 @@ a {
   cursor: pointer;
 }
 
+.login form a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#enlace-registro {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#inicio-sesion-formulario {
+  display: none;
+}
+
+.form-registro {
+  width: 100%;
+}
+
 .caja-blanca-formulario {
   background-color: #b6b6b6;
   border: none;
@@ -185,7 +205,7 @@ a {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin: 10px 0 0 0px;
+  margin: 10px 10px 0 10px;
   cursor: pointer;
 }
 
@@ -216,11 +236,12 @@ a {
 }
 
 .form-contenedor {
-  background: linear-gradient(to right, #000000, #464646);
+  background: linear-gradient(to right, #464646, #000000);
   border-radius: 30px;
   position: relative;
   overflow: hidden;
-  max-width: 500px;
+  width: 100%;
+  height: 100%;
   margin-top: 30px;
 }
 .form-contenedor span {
@@ -228,6 +249,18 @@ a {
 }
 .form-contenedor h2 {
   padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-contenedor {
+    width: 80%;
+  }
+}
+#enlace-iniciar-sesion {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 button {
@@ -1146,7 +1179,7 @@ article .label-radio:hover {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 10px;
-  padding-left: 22px;
+  padding: 20px 10px 20px 10px;
   font-family: "Montserrat", sans-serif;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -1167,7 +1200,7 @@ article .label-radio:hover {
   padding: 10px 15px;
   font-size: 13px;
   border-radius: 8px;
-  width: 70%;
+  width: 90%;
   outline: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.418);
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -1177,16 +1210,16 @@ article .label-radio:hover {
 
 .boton-enviar2 {
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(0, 0, 0, 0.892);
+  background-color: transparent;
   color: #fff;
   font-size: 0.9rem;
   padding: 10px 10px;
-  border: 1px solid transparent;
+  border: 1px solid white;
   border-radius: 8px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 10px 0;
   cursor: pointer;
 }
 .boton-enviar2:hover {
@@ -1198,9 +1231,6 @@ article .label-radio:hover {
 @media (min-width: 410px) {
   .boton-enviar2 {
     margin: 10px 0 0 0px;
-  }
-  .caja-blanca-formulario2 {
-    width: 80%;
   }
 }
 /* Hoja de estilos seccion Contacto */
