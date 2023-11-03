@@ -36,3 +36,4 @@ enlaceRegistro.addEventListener("click", () => {
     registroFormulario.style.display = "block";
     inicioSesionFormulario.style.display = "none";
 });
+

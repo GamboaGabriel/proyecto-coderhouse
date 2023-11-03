@@ -8,29 +8,47 @@
     color: $color-de-fuente;
     text-align: center;
     margin: 30px;
-    padding: 10px 1px;
-    border-radius: 18px;
+    padding: 1px;
+    border-radius: 30px;
     box-shadow: 0px 4px 10px rgb(255, 255, 255);
 
     text-align: center;
     background-color: #000000;
-    background: linear-gradient(to right, #6d6d6d, #000000);
+    background: linear-gradient(to right, #464646, #000000);
 
 
     -webkit-transition: $animacion-carga;
     -moz-transition: $animaciion-carga2;
-    transition: $animaciion-transicion
-}
+    transition: $animaciion-transicion;
 
-.portada2:hover {
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
-    border-radius: 10px;
-    transition-duration: .2s;
+    &:hover {
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        border-radius: 25px;
+        transition-duration: .2s;
+    }
 }
 
 @media (min-width:426px) {
     .caja {
         width: 450px;
+    }
+}
+
+.form-contenedor {
+    background: linear-gradient(to right, #464646, #000000);
+    border-radius: 30px;
+    position: relative;
+    // overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
+    span {
+        font-size: .9rem;
+    }
+
+    h2 {
+        padding-bottom: 20px;
     }
 }
 
@@ -71,17 +89,29 @@
     transition: $animaciion-transicion;
 }
 
-.formulario form a {
+.formulario {
+    form a {
+        text-decoration: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.login form a {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
 }
-.login form a{
-    text-decoration: none;
-    color: #ffffff;
-    cursor: pointer;
-}
-#enlace-registro{
+
+#enlace-registro {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
@@ -91,9 +121,11 @@
 #inicio-sesion-formulario {
     display: none;
 }
-.form-registro{
+
+.form-registro {
     width: 100%;
 }
+
 .caja-blanca-formulario {
     background-color: #b6b6b6;
     border: none;
@@ -110,29 +142,44 @@
     background-color: #000000;
     color: $color-de-fuente;
     font-size: .9rem;
-    padding: 10px 45px;
+    padding: 10px 15px;
     border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin: 10px 10px 0 10px;
+    margin: 10px 40px 20px 40px;
     cursor: pointer;
+
+    &:hover {
+
+        color: black;
+        background: #707070;
+        box-shadow: inset 21px 21px 45px #373737,
+            inset -21px -21px 45px #a9a9a9;
+
+    }
 }
 
 .notificacion {
     margin-top: 25px;
 }
 
+@media (min-width:425px) {
+    .boton-enviar {
+        padding: 10px 60px 10px 60px;
+    }
+}
+
 @media (min-width:800px) {
     .portada2 {
-        padding-top: 100px;
+        padding-top: 10px;
 
     }
 
     .boton-enviar {
         margin: 50px 0px;
-        padding: 10px 60px 10px 60px;
+        padding: 10px 100px 10px 100px;
     }
 }
 
@@ -142,45 +189,25 @@
     }
 }
 
-.form-contenedor form .form-icons {
-    padding: 0 0 15px 0;
-}
 
 .oculto {
     font-weight: bold;
 
 }
 
-.form-contenedor {
-    background: linear-gradient(to right, #464646, #000000);
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-    // max-width: 500px;
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
-
-    span {
-        font-size: .9rem;
-    }
-    h2{
-        padding-bottom: 20px;
-    }
-}
-@media (min-width:768px) {
-    .form-contenedor {
-        width: 80%;
-    }
-}
-
-#enlace-iniciar-sesion{
+#enlace-iniciar-sesion,
+#enlace-registro {
     text-decoration: none;
-    color: #ffffff;
+    color: $color-de-fuente;
     cursor: pointer;
 
-    margin-top: 30px;
+    margin-bottom: 40px;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
+
 button {
     background-color: #000000;
     color: $color-de-fuente;
@@ -195,15 +222,7 @@ button {
     cursor: pointer;
 }
 
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 0px;
-    height: 100%;
 
-}
 
 input {
     background-color: #b6b6b6;
@@ -212,7 +231,6 @@ input {
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
-    width: 100%;
     outline: none;
 }
 
@@ -291,7 +309,7 @@ input {
             margin-top: 10px;
             cursor: pointer;
             border-radius: 8px;
-            
+
             &:hover {
                 color: black;
                 background: #707070;
