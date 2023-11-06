@@ -22,14 +22,19 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
 
-const enlaceIniciarSesion = document.getElementById("enlace-iniciar-sesion");
+const botonToggle = document.getElementById("boton-toggle");
 const enlaceRegistro = document.getElementById("enlace-registro");
 const registroFormulario = document.getElementById("registro-formulario");
 const inicioSesionFormulario = document.getElementById("inicio-sesion-formulario");
 
-enlaceIniciarSesion.addEventListener("click", () => {
-    registroFormulario.style.display = "none";
-    inicioSesionFormulario.style.display = "block";
+botonToggle.addEventListener("click", () => {
+    if (registroFormulario.style.display === "block") {
+        registroFormulario.style.display = "none";
+        inicioSesionFormulario.style.display = "block";
+    } else {
+        registroFormulario.style.display = "block";
+        inicioSesionFormulario.style.display = "none";
+    }
 });
 
 enlaceRegistro.addEventListener("click", () => {

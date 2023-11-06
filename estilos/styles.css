@@ -189,12 +189,6 @@ a {
   cursor: pointer;
 }
 
-#enlace-registro {
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
 #inicio-sesion-formulario {
   display: none;
 }
@@ -261,14 +255,14 @@ a {
   font-weight: bold;
 }
 
-#enlace-iniciar-sesion,
+#boton-toggle,
 #enlace-registro {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
   margin-bottom: 40px;
 }
-#enlace-iniciar-sesion:hover,
+#boton-toggle:hover,
 #enlace-registro:hover {
   text-decoration: underline;
 }

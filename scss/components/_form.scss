@@ -111,12 +111,6 @@
     cursor: pointer;
 }
 
-#enlace-registro {
-    text-decoration: none;
-    color: #ffffff;
-    cursor: pointer;
-}
-
 // desaparece el inicio de sesion //
 #inicio-sesion-formulario {
     display: none;
@@ -195,7 +189,7 @@
 
 }
 
-#enlace-iniciar-sesion,
+#boton-toggle,
 #enlace-registro {
     text-decoration: none;
     color: $color-de-fuente;
