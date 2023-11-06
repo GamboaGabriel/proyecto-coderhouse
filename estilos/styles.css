@@ -291,6 +291,33 @@ input {
   outline: none;
 }
 
+/**/
+.form-animacion {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  animation: move 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+}
+
+#registro-formulario {
+  transform: translateY(90%);
+}
+
+#inicio-sesion-formulario {
+  transform: translateY(100%);
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -500px;
+  }
+}
 /* ------->Formulario para escritorio <-------- */
 .formulario2 {
   display: none;
