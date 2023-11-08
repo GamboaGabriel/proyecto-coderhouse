@@ -144,7 +144,7 @@ a {
   text-shadow: 4px 4px rgb(0, 0, 0);
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
+  text-align: center;
   margin-top: 10px;
 }
 .login .form-icons {
@@ -163,7 +163,7 @@ a {
 }
 
 .formulario {
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   margin-top: 10px;
   padding-left: 22px;
