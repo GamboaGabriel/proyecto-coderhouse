@@ -8,8 +8,6 @@
 
 /* Fondo de la web */
 #portada-img {
-  /* background-color: #000000;
-  background: linear-gradient(to right, #000000, #464646);*/
   background-image: url(../img/pete-f-SXDfG6HOyX4-unsplash.jpg);
   background-size: cover;
   background-repeat: repeat-y;
@@ -27,12 +25,13 @@ a {
 /*---Menu Hamburguesa---*/
 @media (max-width: 767px) {
   .nav-principal {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
     opacity: 0;
     visibility: hidden;
     z-index: 999;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
     position: absolute;
     top: 0;
     right: 0;
@@ -64,8 +63,10 @@ a {
     text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
   }
   .nav {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: end;
+    flex-direction: column;
     gap: 2.3rem;
   }
   .icon-list-abrir {
@@ -96,9 +97,9 @@ a {
 /* Formulario de la pagina principal de la web */
 .portada2 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #fff;
   text-align: center;
   margin: 30px;
@@ -174,9 +175,9 @@ a {
 }
 .formulario form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .formulario form a {
   text-decoration: none;
@@ -319,6 +320,13 @@ input {
     top: -500px;
   }
 }
+@media (min-width: 800px) {
+  @keyframes move {
+    100% {
+      top: -570px;
+    }
+  }
+}
 /* ------->Formulario para escritorio <-------- */
 .formulario2 {
   display: none;
@@ -326,11 +334,9 @@ input {
 
 @media (min-width: 868px) {
   .formulario2 {
-    /* background-color: #000000;
-    background: linear-gradient(to right, #000000, #000a2c); */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     padding: 150px 0 200px 0;
@@ -396,8 +402,8 @@ input {
   .container2 form {
     background-color: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 0 40px;
     height: 100%;
@@ -496,8 +502,8 @@ input {
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 0 30px;
     text-align: center;
@@ -524,9 +530,9 @@ input {
 .cabeza {
   background-color: rgba(0, 0, 0, 0.892);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 9px;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0.5px 0.5px 20px #636363;
@@ -574,6 +580,8 @@ input {
   color: #fff;
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: end;
   flex-direction: column;
   gap: 1rem;
   padding: 30px;
@@ -738,9 +746,9 @@ input {
 .footer {
   background-color: rgba(0, 0, 0, 0.892);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 100px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -818,11 +826,9 @@ li a:hover {
 /*------------------ Hoja de estilos seccion Principal --------------------*/
 .portada-container {
   display: flex;
-  /*-- Direccion de los elementos--*/
-  flex-direction: column;
-  /*-- Distribucion de los elementos--*/
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -837,10 +843,10 @@ li a:hover {
 /* Titulo y texto en la pagina principal de la web */
 .portada1 {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.8470588235);
   padding: 50px 30px;
   box-shadow: 1px 1px 20px rgba(97, 97, 97, 0.7411764706);
@@ -888,13 +894,9 @@ li a:hover {
 /*--------- Hoja de estilos seccion Academia --------*/
 .portada-container-academia {
   display: flex;
-  /*-- Direccion de los elementos--*/
-  flex-direction: column;
-  /*---Multilinea---
-  flex-wrap: wrap;*/
-  /*-- Distribucion de los elementos--*/
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* titulo de la primera foto primera seccion*/
@@ -911,14 +913,14 @@ li a:hover {
 /* imagen y texto de la primera seccion */
 .foto-texto {
   color: #fff;
-  display: flex;
   font-weight: bold;
-  flex-direction: column;
   text-shadow: 2px 3px rgb(0, 0, 0);
   flex-wrap: nowrap;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .foto-baile,
@@ -988,13 +990,9 @@ li a:hover {
 /* Seguna seccion academia */
 .portada-container-academia2 {
   display: flex;
-  /*-- Direccion de los elementos--*/
-  flex-direction: column;
-  /*---Multilinea---
-  flex-wrap: wrap;*/
-  /*-- Distribucion de los elementos--*/
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .foto-texto2 {
@@ -1032,11 +1030,11 @@ li a:hover {
   background-color: rgba(0, 0, 0, 0.892);
   padding: 20px 0;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 20px;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: nowrap;
   color: #fff;
 }
 
@@ -1089,15 +1087,15 @@ article .label-radio:hover {
 }
 /* Segunda seccion de la pag productos */
 .solo-zapatos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
   background-color: rgba(0, 0, 0, 0.892);
   padding: 20px 0;
-  display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
   gap: 50px;
-  justify-content: space-around;
-  align-items: center;
   color: black;
 }
 
@@ -1155,9 +1153,9 @@ article .label-radio:hover {
 /*----------------- Hoja de estilos seccion Nosotros/Profes ----------------*/
 .portada-nosotros {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   border: 1px solid rgb(255, 255, 255);
   padding: 10px 1px;

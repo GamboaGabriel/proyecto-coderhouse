@@ -16,9 +16,6 @@ $color-de-fuente: #fff;
 
 /* Fondo de la web */
 #portada-img {
-
-    /* background-color: #000000;
-    background: linear-gradient(to right, #000000, #464646);*/
     background-image: url(../img/pete-f-SXDfG6HOyX4-unsplash.jpg);
     background-size: cover;
     background-repeat: repeat-y;
@@ -31,4 +28,19 @@ a{
     text-decoration: none;
     text-decoration-line: none;
     font-family: $fuente-de-la-web;
+}
+
+// mixings //
+
+@mixin flexbox($justify:center, $align:center, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: column;
+}
+
+@mixin grid($column, $row){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
 }

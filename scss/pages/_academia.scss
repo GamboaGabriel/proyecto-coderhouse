@@ -1,14 +1,7 @@
 /*--------- Hoja de estilos seccion Academia --------*/
 
 .portada-container-academia {
-    display: flex;
-    /*-- Direccion de los elementos--*/
-    flex-direction: column;
-    /*---Multilinea---
-    flex-wrap: wrap;*/
-    /*-- Distribucion de los elementos--*/
-    justify-content: center;
-    align-items: center;
+    @include flexbox (center, center, column);
 }
 
 /* titulo de la primera foto primera seccion*/
@@ -27,14 +20,12 @@
 
 .foto-texto {
     color: $color-de-fuente;
-    display: flex;
     font-weight: bold;
-    flex-direction: column;
     text-shadow: 2px 3px rgb(0, 0, 0);
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
+    @include flexbox (center, center, column);
+
+    gap: 3rem;
 }
 
 .foto-baile,
@@ -116,14 +107,7 @@
 /* Seguna seccion academia */
 
 .portada-container-academia2 {
-    display: flex;
-    /*-- Direccion de los elementos--*/
-    flex-direction: column;
-    /*---Multilinea---
-    flex-wrap: wrap;*/
-    /*-- Distribucion de los elementos--*/
-    justify-content: center;
-    align-items: center;
+    @include flexbox (center, center, column);
 }
 
 .foto-texto2 {

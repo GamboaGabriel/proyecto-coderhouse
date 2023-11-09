@@ -2,10 +2,8 @@
 
 .footer {
     background-color: $color-de-fondo;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (center, center, column);
+
     margin-top: 100px;
     font-family: $fuente-de-la-web;
     color: $color-de-fuente;

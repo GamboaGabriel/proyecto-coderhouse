@@ -1,9 +1,7 @@
 /* Hoja de estilos seccion Contacto */
 
 .contenedor-mapa {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    @include grid (1fr, 1fr 1fr 1fr);
 }
 
 .h2-contacto {

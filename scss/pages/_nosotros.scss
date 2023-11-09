@@ -3,10 +3,7 @@
 /*----------------- Hoja de estilos seccion Nosotros/Profes ----------------*/
 
 .portada-nosotros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (center, center, column);
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
 
@@ -113,7 +110,4 @@
         margin: 10px 0 0 0px;
     }
 
-    // .caja-blanca-formulario2 {
-    //     // width: 80%;
-    // }
 }
